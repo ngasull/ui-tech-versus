@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "jasmine": true,
+    "browser": true
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "rules": {
+    "strict": 0,
+    "semi": [2, "never"],
+    "curly": 0,
+    "quotes": [1, "single", "avoid-escape"],
+    "comma-dangle": 1,
+    "no-unused-vars": 0, // Because of JSX. IDE does the job
+    "no-unused-expressions": 0 // Because of shouldjs
+  }
+}

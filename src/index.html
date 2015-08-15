@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>Let's compare some UI techs</title>
+
+    <link rel="stylesheet" type="text/css" href="vendor/materialize/dist/css/materialize.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/versus.css"/>
+
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="vendor/materialize/dist/js/materialize.js"></script>
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <link rel="import" href="vendor/polymer/polymer.html">
+    <script type="text/javascript" src="vendor/ractive/ractive.js"></script>
+    <script type="text/javascript" src="vendor/react/react.js"></script>
+</head>
+<body>
+    <nav>
+        <label for="tech">Please choose a UI tech:</label>
+        <select id="tech">
+            <option></option>
+            <option value="angular">Angular</option>
+            <option value="polymer">Polymer</option>
+            <option value="ractive">Ractive</option>
+            <option value="react">React</option>
+        </select>
+    </nav>
+
+    <div id="root"></div>
+
+    <script type="text/javascript" src="versus-app.js"></script>
+</body>
+</html>
