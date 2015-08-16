@@ -36,10 +36,10 @@ function doBrowserify(watch) {
     }
 
     bundler = browserify(entry, props)
-        .transform('brfs')
         .transform('babelify', {
             sourceMaps: true
         })
+        .transform('brfs')
 
     if (watch) {
         bundler = watchify(bundler)

@@ -3,7 +3,7 @@ let techs = {
     angular: require('./tech/angular/versus-angular.js'),
     polymer: require('./tech/polymer/versus-polymer.js'),
     ractive: require('./tech/ractive/versus-ractive.js'),
-    react: require('./tech/react/versus-react.js')
+    react: require('./tech/react/versus-react.jsx')
 }
 
 let feedData = require('./feed-data')
