@@ -96,5 +96,6 @@ gulp.task('default', ['static', 'css', 'watchify'], function () {
         }
     })
 
+    gulp.watch(paths.css, ['css'])
     gulp.watch(paths.static, ['static-reload'])
 })
