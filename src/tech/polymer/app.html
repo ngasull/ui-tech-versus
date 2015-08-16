@@ -1,0 +1,25 @@
+<dom-module id="vs-polymer">
+
+<style>
+/* CSS rules for your element */
+</style>
+
+<template>
+    <vs-polymer-sidebar feedElements="{{feedData.elements}}" />
+</template>
+
+<script>
+    Polymer({
+        is: "vs-polymer",
+
+        ready: function () {
+            this.feedData = window.VsPolymer.feedData;
+        },
+
+        properties: {
+            feedData: Object
+        }
+    });
+</script>
+
+</dom-module>
