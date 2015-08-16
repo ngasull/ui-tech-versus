@@ -13,7 +13,7 @@ var buffer = require('vinyl-buffer')
 
 var paths = {
     css: ['src/css/**'],
-    static: ['src/index.html']
+    static: ['src/**/*.html']
 }
 
 function doBrowserify(watch) {
@@ -36,6 +36,7 @@ function doBrowserify(watch) {
     }
 
     bundler = browserify(entry, props)
+        .transform('brfs')
         .transform('babelify', {
             sourceMaps: true
         })

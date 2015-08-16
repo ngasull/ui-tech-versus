@@ -1,0 +1,10 @@
+<ul>
+    {{#feedElements:element}}
+        <li>
+            <a href="{{id}}" on-click="select">
+                <div>{{title}}</div>
+                <p>{{shortDesc}}</p>
+            </a>
+        </li>
+    {{/feedElements}}
+</ul>

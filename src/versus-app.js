@@ -6,6 +6,7 @@ let techs = {
     react: require('./tech/react/versus-react.js')
 }
 
+let feedData = require('./feed-data')
 let rootElement = document.getElementById('root')
 let techSelector = document.getElementById('tech')
 
@@ -20,6 +21,6 @@ techSelector.addEventListener('change', (e) => {
             }
         }
 
-        techs[techName].bootstrap(rootElement)
+        techs[techName].bootstrap(rootElement, feedData)
     }
 })

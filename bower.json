@@ -17,8 +17,6 @@
     "angular": "~1.4.4",
     "polymer": "~1.1.0",
     "ractive": "~0.7.3",
-    "react": "~0.13.3",
-    "materialize": "~0.97.0",
-    "jquery": "~2.1.4"
+    "react": "~0.13.3"
   }
 }
